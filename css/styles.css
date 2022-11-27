@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    min-width: 420px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact_body {
+    background-image: url("../img/basicbg.jpg");
+    background-repeat: repeat-y;
+    background-position: 100%;
+}
+
+.contact_container {
+    line-height: 1.6;
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+.buscard {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 630px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    background-color: #ffffff60;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin: 2em 0em 2em 0em;
+}
+
+.social-list {
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.social-link {
+    color: black;
+    opacity: 0,5;
+    font-size: 1.125rem;
+}
+
+.social-item:hover {
+    transform: scale(1.1);
+}
+
+.qr-image {
+    width: 125px;
+    margin-bottom: 2em;
+}
+
+.profile-main {
+    align-self: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.profile-image {
+    width: 125px;
+}
+
+.profile-name {
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.profile-position {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
+}
+
+.profile-body {
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.social-list a {
+    text-decoration: none;
+}
+
+@media (min-width: 610px) {
+    .buscard {
+        margin: 2em 0em 2em 0em;
+        flex-direction: row;
+    }
+
+    .profile-main {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    .profile-name::after {
+        margin-left: 0;
+    }
+}
